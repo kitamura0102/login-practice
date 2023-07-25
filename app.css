@@ -9,17 +9,13 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 2;
 }
-img {
-  max-width: 60%;
-  float: left;
-}
+
 a {
   text-decoration: none;
 }
 
 h1 {
   color: #212a3e;
-  display: inline;
   font-size: 3rem;
   font-weight: bolder;
 }
@@ -31,54 +27,36 @@ h2 {
 .big-box {
   background-color: #f1f6f9;
   margin: 150px;
-  min-width: 80%;
+  max-width: 80%;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  
+}
+.image{
+background-image: url(/Images/tom-coe-xOrn1bp7eno-unsplash.jpg);
+background-size: cover;
+background-position: center;
+width: 50%;
+flex: 1;
+}
+.little-box{
+  text-align: center;
+  
+}
+.log-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex: 1;
 }
 
-.inside {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image {
-  width: 50%;
-  /* background-color: red; */
-}
-.log-in {
-  text-align: center;
-  background-color: lightcoral;
-  display: flex;
-  flex-shrink: 2;
-  flex-direction: column;
-  height: 780px;
-  
-  justify-content: center;
-  float: right;
-}
-.litte-box {
-  /* background-color: blue; */
-  width: 300px;
-  display: inline;
-}
-.btn {
-  background-color: #9ba4b5;
+.btn{
+  padding: 15px 50px;
+  font-size: 24px;
+  font-weight: lighter;
+  border: none ;
+  background-color: #394867;
   color: #f1f6f9;
-  border: none;
-  font-size: 2rem;
-  font-weight: 100;
-  padding: 10px 60px;
-}
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-  
-  
-  
-}
-.links a {
-  font-size: 2rem;
-  font-weight: 100;
-  color: #9ba4b5;
-  
 }

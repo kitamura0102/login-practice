@@ -60,3 +60,19 @@ flex: 1;
   background-color: #394867;
   color: #f1f6f9;
 }
+
+.links{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.links a{
+  font-size: 28px;
+  font-weight: lighter;
+  color: #9ba4b5;
+  
+ 
+  
+}

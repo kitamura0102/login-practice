@@ -24,55 +24,82 @@ h2 {
   font-size: 2rem;
   font-weight: lighter;
 }
+button {
+  padding: 15px 80px;
+  font-size: 24px;
+  font-weight: lighter;
+  border: none;
+  background-color: #394867;
+  color: #f1f6f9;
+  cursor: pointer;
+}
 .big-box {
   background-color: #f1f6f9;
-  margin: 150px;
+  margin: 60px 100px;
   max-width: 80%;
   min-height: 750px;
   display: flex;
   justify-content: center;
-  
 }
-.image{
-background-image: url(/Images/tom-coe-xOrn1bp7eno-unsplash.jpg);
-background-size: cover;
-background-position: center;
-width: 50%;
-flex: 1;
-}
-.little-box{
-  text-align: center;
-  
-}
-.log-in{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+.image {
+  background-image: url(/Images/tom-coe-xOrn1bp7eno-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
   flex: 1;
 }
+.little-box {
+  text-align: center;
 
-.btn{
-  padding: 15px 50px;
-  font-size: 24px;
-  font-weight: lighter;
-  border: none ;
-  background-color: #394867;
-  color: #f1f6f9;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-flow: column-reverse;
+  flex-direction: column;
 }
-
-.links{
-  background-color: red;
+.log-in {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  flex: 1;
 }
-.links a{
+.text{
+  position: relative;
+  top: 30%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1 2 100px;
+}
+.links a {
   font-size: 28px;
   font-weight: lighter;
   color: #9ba4b5;
-  
- 
-  
+  margin: 10px;
 }
+
+@media screen and (max-width:773px){
+  .big-box{
+    width: 70%;
+    transition: width 2s ease;
+  }
+  h1{
+    font-size: 2rem;
+    transition: font-size 1s ease;
+  }
+  h2{
+    font-size: 1.5rem;
+    transition: font-size 1s ease;
+  }
+  }
+  
+  button{
+    padding: 15px 40px;
+    transition: font-size 1s ease;
+    
+  }
+
